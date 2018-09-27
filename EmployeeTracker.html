@@ -1,0 +1,76 @@
+<!--includes bootstrap & JS -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Employee Tracker</title>
+  </head>
+  <body>
+    <div class="container currentEmployees">
+        <div class="row">
+            <h1>Current Employees</h1>
+        </div>
+
+        <div class="row employeeList">
+            <div class="column-sm" id="name">
+                <p>Employee Name</p>
+            </div>
+            <div class="column-sm" id="role">
+                <p>Role</p>
+            </div>
+            <div class="column-sm" id="start">
+                <p>Start Date</p>
+            </div>
+            <div class="column-sm" id="months">
+                <p>Months Worked</p>
+            </div>
+            <div class="column-sm" id="rate">
+                <p>Monthly Rate ($)</p>
+            </div>
+            <div class="column-sm" id="total">
+                <p>Total Billed ($)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container addEmployee">
+        <h1>Add Employee</h1>
+
+        <div id="nameAdd">
+            <p>Employee Name</p>
+            <input type="text" class="form-control" id="nameCell" placeholder="Jane Doe...">
+        </div>
+             
+        <div id="roleAdd">
+            <p>Role</p>
+            <input type="text" class="form-control" id="roleCell" placeholder="Title...">
+        </div>
+
+        <div id="startAdd">
+            <p>Start Date (MM/DD/YYYY)</p>
+            <input type="text " class="form-control" id="startCell" placeholder="MM/DD/YYYY">
+        </div>
+
+        <div id="rateAdd">
+            <p>Monthly Rate</p>
+            <input type="text " class="form-control " id="rateCell" placeholder="$000">
+        </div>
+
+        <button type="submit " class="btn btn-info " id="submit">Submit</button>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
