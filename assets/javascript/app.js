@@ -6,14 +6,19 @@ var mWorked = "";
 var tBilled = "";
 
 
-$("#submit").on("click", function(event){
+$("#add-user").on("click", function(event) {
     event.preventDefault();
     startDate = $("#startAdd").val();
     console.log(startDate);
 
-var employeeName = $("#name").val().trim();
-var job = $("#job").val().trim();
-var startDate = $("#start").val().trim();
-var mRate = $("#rate").val().trim();
+ employeeName = $("#name").val().trim();
+ job = $("#role").val().trim();
+ startDate = $("#start").val().trim();
+ mRate = $("#rate").val().trim();
     console.log(job);
+
+$("#name").text(sv.name);
+$("#role").text(sv.role);
+$("#start").text(sv.start);
+$("#rate").text(sv.rate);
 })
